@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<title>Lista de Tarefas</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div class="app">
+		<header>
+			<h1>Lista de Tarefas</h1>
+		</header>
+		<div class="tarefas">	
+			<p>Digite uma Tarefa para a lista:</p>
+			<input type="text" id="texto">
+			<input type="submit" value="Enviar" onclick= "forca()">				
+		</div>
+		<div class="lists">
+			<div class="list">Tarefas
+				<div class="list-item" draggable="true" value="daiuwdj"></div>
+				<div class="list-item" draggable="true"></div>
+				<div class="list-item" draggable="true"></div>
+			</div>
+			<div class="list">Concluidas</div>
+			<div class="list">Não Concluidas</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

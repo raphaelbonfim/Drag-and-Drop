@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>Lista de Tarefas</title>
+
+	<link rel="stylesheet" href="lista.css" />
+</head>
+<body>
+	<div class="app">
+		<header>
+			<h1>Lista de Tarefas</h1>
+		</header>
+		<div class="tarefas">	
+			<p><h2>Digite uma Tarefa para a lista:</h2></p>
+			<input type="text" id="texto">
+			<input type="submit" value="Criar" onclick= "criarTarefa()">	
+		</div>
+		<div class="lists">
+			<div class="list" id= "lista1" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"><h1>Tarefas</h1></div>
+			<div class="list" id= "lista2" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"><h1>Concluídas</h1></div>
+			<div class="list" id= "lista3" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"><h1>Não Concluidas</h1></div>
+		</div>
+	</div>
+	<script src="listaTarefas.js"></script>
+</body>
+</html>
